@@ -1,0 +1,12 @@
+[gd_scene format=2]
+
+[node name="PlayerDetectionZone" type="Area2D"]
+modulate = Color( 1, 0.309804, 0.294118, 0.545098 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+modulate = Color( 1, 0.309804, 0.294118, 0.545098 )
+position = Vector2( -3, 0 )
+[connection signal="body_entered" from="." to="." method="_on_PlayerDetectionZone_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_PlayerDetectionZone_body_exited"]

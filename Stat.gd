@@ -6,7 +6,6 @@ onready var health = max_health setget set_health
 signal no_health
 
 func set_health(value):
-	print('hi')
 	health = value
 	if health <= 0:
 		health = 0
